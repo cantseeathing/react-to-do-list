@@ -1,38 +1,109 @@
-.App {
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #ffe4d6;
+}
+
+.app {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.main-title {
+  font-family: Fuggles;
+  text-align: center;
+  font-size: 200px;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  background-color: #facbea;
+
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+}
+
+.add-task {
+  background-color: #d988b9;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-task input {
+  width: 38rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+  padding: 0.1em;
+  border-radius: 0.2em;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.add-image {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.add-image:hover {
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.task-list {
+  background-color: #d988b9;
   display: flex;
   flex-direction: column;
+  margin: 0;
+}
+
+.task-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.task-item p {
+  font-weight: bold;
+  font-size: 32px;
+  margin-top: 1.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task-item img {
+  margin-right: 0.5rem;
+}
+
+.task-item input {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.task-complete {
+  text-decoration: line-through;
+  color: #b0578d;
+}
+
+.task-incomplete {
+  color: #ffe4d6;
+}
+
+.stats {
+  background-color: #b0578d;
+  margin: 0;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.stats p,
+.stats span {
+  color: #ffe4d6;
+  display: inline-block;
+  margin-top: 1rem;
 }
